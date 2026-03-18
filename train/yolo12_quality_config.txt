@@ -1,0 +1,18 @@
+Model: yolo12s.pt
+Data: K:\Python\git\CVSigns\train\yolo_rtsd\dataset.yaml
+Epochs: 150
+Image size: 960
+Batch size: 4
+Device: 0
+Workers: 6
+Cache: disk
+AMP: True
+Patience: 30
+Cosine LR: True
+Close mosaic: 10
+Project: K:\Python\git\CVSigns\runs\detect
+Run name: rtsd_yolo12s_960_quality
+
+If CUDA out of memory:
+1. Change batch size from 4 to 3.
+2. If needed, change batch size from 3 to 2.

@@ -1,4 +1,5 @@
 .venv/
+.venv-train/
 __pycache__/
 *.pyc
 *.pyo
@@ -11,3 +12,25 @@ dist/
 outputs/
 config.json
 *.log
+runs/
+train/logs/
+train/report_assets/
+train/reports/
+report_tmp.docx
+
+# local training data and generated artifacts
+train/rtsd-frames/
+train/yolo_rtsd/images/
+train/yolo_rtsd/labels/
+train/yolo_rtsd/train.txt
+train/yolo_rtsd/val.txt
+train/yolo_rtsd/prepare_summary.json
+
+# model weights
+*.pt
+*.pth
+!hf_space/*.pt
+
+# optional local Hugging Face clone
+huggingface_space/
+rtsd/

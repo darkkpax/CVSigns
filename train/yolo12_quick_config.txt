@@ -1,0 +1,17 @@
+Model: yolo12n.pt
+Data: K:\Python\git\CVSigns\train\yolo_rtsd\dataset.yaml
+Epochs: 60
+Image size: 640
+Batch size: 8
+Device: 0
+Workers: 6
+Cache: disk
+AMP: True
+Patience: 10
+Cosine LR: True
+Close mosaic: 10
+Project: K:\Python\git\CVSigns\runs\detect
+Run name: rtsd_yolo12n_640_quick
+
+This is the quick training setup.
+If GPU memory allows it, you can try batch size 10 or 12 later.

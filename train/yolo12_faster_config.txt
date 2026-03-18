@@ -1,0 +1,17 @@
+Model: yolo12s.pt
+Data: K:\Python\git\CVSigns\train\yolo_rtsd\dataset.yaml
+Epochs: 80
+Image size: 800
+Batch size: 4
+Device: 0
+Workers: 6
+Cache: disk
+AMP: True
+Patience: 15
+Cosine LR: True
+Close mosaic: 10
+Project: K:\Python\git\CVSigns\runs\detect
+Run name: rtsd_yolo12s_800_fast
+
+This is the faster balanced setup.
+If CUDA out of memory, reduce batch size from 4 to 3.

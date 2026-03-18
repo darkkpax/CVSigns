@@ -209,7 +209,7 @@ class MainWindow(QMainWindow):
             self._show_error(
                 "Модель не загружена",
                 "Файл модели отсутствует или не был загружен. Поместите веса в "
-                "`models/russian_traffic_signs.pt` или выберите `.pt` файл вручную.",
+                "`models/rtsd_yolo12n_640_quick.pt` или выберите `.pt` файл вручную.",
             )
             return
 
